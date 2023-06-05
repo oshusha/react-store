@@ -1,8 +1,8 @@
-import ShopItemFunc from './ShopItemFunc';
+import ShopItemFunc from './components/ShopItemFunc/ShopItemFunc';
 import './App.css'
 
 function App() {
-  const items = {
+  const item = {
     brand: 'Tiger of Sweden',
     title: 'Leonard coat',
     description: 'Minimalistic coat in cotton-blend',
@@ -20,12 +20,12 @@ function App() {
       </div>
       <div className="window">
         <ShopItemFunc 
-          brand={items.brand}
-          title={items.title}
-          description={items.description}
-          descriptionFull={items.descriptionFull}
-          price={items.price}
-          currency={items.currency}
+          brand={item.brand}
+          title={item.title}
+          description={item.description}
+          descriptionFull={item.descriptionFull}
+          price={item.price}
+          currency={item.currency}
         />
       </div>
     </div>
